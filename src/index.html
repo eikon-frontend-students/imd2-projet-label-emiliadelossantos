@@ -2,12 +2,126 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>Sony Music | Latin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header class="site-header">
+      <div class="container-header">
+        <a class="logo" href="#">
+          <img src="img/sonymusiclogo.png" alt="Sony Music Latin logo" />
+        </a>
+        <nav id="mainNav" class="main-nav">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#artists">ARTISTS</a></li>
+            <li><a href="#licensing">LICENSING</a></li>
+            <li><a href="#brandpartnership">BRAND PARTNERSHIP</a></li>
+            <li><a href="#merchstore">MERCH STORE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-slider">
+        <div class="hero-container">
+          <img src="img/emiliamernes.jpg.webp" class="artist" alt="Emilia" />
+          <h1>EMILIA</h1>
+          <a class="button-cta" href="#listen">LISTEN NOW</a>
+        </div>
+      </section>
+
+      <section id="artists" class="artists-container">
+        <h1 class="title">ARTISTS</h1>
+        <div class="grid">
+          <article class="artist-card">
+            <img src="img/rauwalejandro.jpg.webp" alt="Rauw Alejandro" />
+            <h3>RAUW ALEJANDRO</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/kapo.jpg.webp" alt="Kapo" />
+            <h3>KAPO</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/manuelturizo.jpg" alt="Manuel Turizo" />
+            <h3>MANUEL TURIZO</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/romeosantos.webp" alt="Romeo Santos" />
+            <h3>ROMEO SANTOS</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/maluma.jpeg" alt="Artist 5" />
+            <h3>MALUMA</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/marcanthony.jpg" alt="Maluma" />
+            <h3>MARC ANTHONY</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/beckyg1.jpg" alt="Becky G" />
+            <h3>BECKY G</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/noriel.png" alt="Noriel" />
+            <h3>NORIEL</h3>
+          </article>
+          <article class="artist-card">
+            <img src="img/palomamami.jpg" alt="Paloma Mami" />
+            <h3>PALOMA MAMI</h3>
+          </article>
+        </div>
+        <a class="button-cta" href="#listen">SEE ALL</a>
+      </section>
+
+      <section id="events" class="events container">
+        <h1 class="section-title">UPCOMING EVENTS</h1>
+        <div class="date">
+          <article class="event">
+            <h3>02</h3>
+            <p>Nov</p>
+            <p>Camilo - New Single Release</p>
+            <img src="img/camilo.jpg" alt="Camilo" />
+          </article>
+          <article class="event">
+            <h3>06</h3>
+            <p>Nov</p>
+            <p>Becky G — Album Reveal</p>
+            <img src="img/beckyg2.jpg" alt="Camilo" />
+          </article>
+          <article class="event">
+            <h3>09</h3>
+            <p>Nov</p>
+            <p>Christian Nodal — Virtual Listening Session</p>
+            <img src="img/christiannodal.jpg.webp" alt="Camilo" />
+          </article>
+          <article class="event">
+            <h3>12</h3>
+            <p>Nov</p>
+            <p>Chayanne — Concert in Miami</p>
+            <img src="img/chayanne.jpg" alt="Camilo" />
+          </article>
+          <article class="event">
+            <h3>19</h3>
+            <p>Nov</p>
+            <p>Carlos Vives — Special EP Release</p>
+            <img src="img/carlosvives.jpg.webp" alt="Camilo" />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Sony Music Latin</p>
+      </div>
+    </footer>
 
     <script src="js/main.js" type="module"></script>
   </body>
