@@ -5,44 +5,49 @@
     <title>Sony Music | Latin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container-header">
-        <a class="logo" href="#">
-          <img src="img/sonymusiclogo.png" alt="Sony Music Latin logo" />
-        </a>
-        <nav id="mainnav" class="main-nav">
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#artists">ARTISTS</a></li>
-            <li><a href="#licensing">LICENSING</a></li>
-            <li><a href="#brandpartnership">BRAND PARTNERSHIP</a></li>
-            <li><a href="#merchstore">MERCH STORE</a></li>
-          </ul>
-        </nav>
-      </div>
+      <a class="logo" href="index.html">
+        <img src="img/sonymusiclogo.png" alt="Sony Music Latin logo" />
+      </a>
+      <nav id="mainnav" class="main-nav">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#artists">ARTISTS</a></li>
+          <li><a href="#licensing">LICENSING</a></li>
+          <li><a href="#brandpartnership">BRAND PARTNERSHIP</a></li>
+          <li><a href="#merchstore">MERCH STORE</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section class="hero-slider">
-        <div class="hero-container">
-          <img src="img/emiliamernes.jpg.webp" class="artist" alt="Emilia" />
-          <h1>EMILIA</h1>
-          <a class="button-cta" href="#listen">LISTEN NOW</a>
+      <section class="hero">
+        <div class="hero-slide">
+          <img id="hero-image" src="img/rosi.png" alt="Rosalia" />
+
+          <div class="hero-content">
+            <h1 id="hero-artist">ROSALIA</h1>
+            <a
+              class="button-cta-primary hero-btn"
+              href="https://open.spotify.com/intl-es/album/3SUEJULSGgBDG1j4GQhfYY?si=3YU36-3qS-WiF9pSTr7f-g"
+              >LISTEN NOW</a
+            >
+          </div>
         </div>
       </section>
 
       <section id="artists" class="artists-container">
-        <h1 class="title">ARTISTS</h1>
-        <div class="grid">
-          <article class="artist-card">
+        <img class="title-artists" src="img/artist.svg" alt="ARTISTS" />
+        <div class="grid-artists">
+          <article class="artist-card-big">
             <img src="img/rauwalejandro.jpg.webp" alt="Rauw Alejandro" />
-            <h3>RAUW ALEJANDRO</h3>
+            <h2>RAUW ALEJANDRO</h2>
           </article>
           <article class="artist-card">
             <img src="img/kapo.jpg.webp" alt="Kapo" />
@@ -52,9 +57,13 @@
             <img src="img/manuelturizo.jpg" alt="Manuel Turizo" />
             <h3>MANUEL TURIZO</h3>
           </article>
-          <article class="artist-card">
+          <article class="artist-card-big">
             <img src="img/romeosantos.webp" alt="Romeo Santos" />
-            <h3>ROMEO SANTOS</h3>
+            <h2>ROMEO SANTOS</h2>
+          </article>
+          <article class="artist-card-big">
+            <img src="img/beckyg1.jpg" alt="Becky G" />
+            <h2>BECKY G</h2>
           </article>
           <article class="artist-card">
             <img src="img/maluma.jpeg" alt="Artist 5" />
@@ -65,10 +74,6 @@
             <h3>MARC ANTHONY</h3>
           </article>
           <article class="artist-card">
-            <img src="img/beckyg1.jpg" alt="Becky G" />
-            <h3>BECKY G</h3>
-          </article>
-          <article class="artist-card">
             <img src="img/noriel.png" alt="Noriel" />
             <h3>NORIEL</h3>
           </article>
@@ -77,46 +82,68 @@
             <h3>PALOMA MAMI</h3>
           </article>
         </div>
-        <a class="button-cta" href="#listen">SEE ALL</a>
-      </section>
-
-      <section id="events" class="events-container">
-        <h1 class="section-title">UPCOMING EVENTS</h1>
-        <div class="date">
-          <article class="event">
-            <h3>02</h3>
-            <p>Nov</p>
-            <p>Camilo - New Single Release</p>
-            <img src="img/camilo.jpg" alt="Camilo" />
-          </article>
-          <article class="event">
-            <h3>06</h3>
-            <p>Nov</p>
-            <p>Becky G — Album Reveal</p>
-            <img src="img/beckyg2.jpg" alt="Camilo" />
-          </article>
-          <article class="event">
-            <h3>09</h3>
-            <p>Nov</p>
-            <p>Christian Nodal — Virtual Listening Session</p>
-            <img src="img/christiannodal.jpg.webp" alt="Camilo" />
-          </article>
-          <article class="event">
-            <h3>12</h3>
-            <p>Nov</p>
-            <p>Chayanne — Concert in Miami</p>
-            <img src="img/chayanne.jpg" alt="Camilo" />
-          </article>
-          <article class="event">
-            <h3>19</h3>
-            <p>Nov</p>
-            <p>Carlos Vives — Special EP Release</p>
-            <img src="img/carlosvives.jpg.webp" alt="Camilo" />
-          </article>
+        <div class="see-all-artists">
+          <a class="button-cta-secondary" href="#listen">SEE ALL</a>
         </div>
       </section>
-      <section id="socialmedia" class="socialmedia-container">
+
+<section id="events" class="events-container">
+  <h1 class="section-title">UPCOMING EVENTS</h1>
+
+  <div class="events-list">
+
+    <article class="event">
+      <div class="event-date">
+        <h3>02</h3>
+        <span>Nov</span>
+      </div>
+      <p class="event-title">Camilo — New Single Release</p>
+      <img src="img/camilo.jpg" alt="Camilo" />
+    </article>
+
+    <article class="event">
+      <div class="event-date">
+        <h3>06</h3>
+        <span>Nov</span>
+      </div>
+      <p class="event-title">Becky G — Album Reveal</p>
+      <img src="img/beckyg2.jpg" alt="Becky G" />
+    </article>
+
+    <article class="event">
+      <div class="event-date">
+        <h3>09</h3>
+        <span>Nov</span>
+      </div>
+      <p class="event-title">Christian Nodal — Virtual Listening Session</p>
+      <img src="img/christiannodal.jpg.webp" alt="Nodal" />
+    </article>
+
+    <article class="event">
+      <div class="event-date">
+        <h3>12</h3>
+        <span>Nov</span>
+      </div>
+      <p class="event-title">Chayanne — Concert in Miami</p>
+      <img src="img/chayanne.jpg" alt="Chayanne" />
+    </article>
+
+    <article class="event">
+      <div class="event-date">
+        <h3>19</h3>
+        <span>Nov</span>
+      </div>
+      <p class="event-title">Carlos Vives — Special EP Release</p>
+      <img src="img/carlosvives.jpg.webp" alt="Carlos Vives" />
+    </article>
+
+  </div>
+</section>
+
+      <section id="social-news" class="social-news-container">
+        <div class="socialmedia-block">
         <h1 class="socialmedia-title">SOCIAL MEDIA</h1>
+        <div class="social-icons">
         <svg
           class="facebook"
           xmlns="http://www.w3.org/2000/svg"
@@ -169,20 +196,32 @@
             fill="white"
           />
         </svg>
-      </section>
-      <section id="newsletter" class="newsletter-container">
+        </div>
+      </div>
+        <div class="newsletter-block">
         <h1 class="newsletter-title">NEWSLETTER</h1>
         <p>Receive news about our latest hits, trends and merch!</p>
-        <a class="button-cta" href="#listen">SUBSCRIBE NOW</a>
-      </section>
+        <a class="button-cta-secondary" href="#subscribe">SUBSCRIBE NOW</a>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>SONY MUSIC ENTRETAINMENT. ALL RIGHTS RESERVED</p>
-      </div>
+      <div class="footer-top-line"></div>
+        <p class="footer-main">SONY MUSIC ENTRETAINMENT. ALL RIGHTS RESERVED</p>
+      <div class="footer-links">
+    <a href="#">SEND US YOUR FEEDBACK</a>
+    <span class="divider"></span>
+    <a href="#">PRIVACY POLICY</a>
+    <span class="divider"></span>
+    <a href="#">HOW WE USE YOUR DATA</a>
+    <span class="divider"></span>
+    <a href="#">I DO NOT SELL MY PERSONAL INFORMATION</a>
+    <span class="divider"></span>
+    <a href="#">TERMS AND CONDITIONS</a>
+    <span class="divider"></span>
+    <a href="#">WHY MUSIC MATTERS</a>
+  </div>
     </footer>
-
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
