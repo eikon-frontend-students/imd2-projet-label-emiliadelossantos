@@ -355,10 +355,141 @@ body {
   display: inline-block;
 }
 /* Responsive */
+/* ---------- NAV MOBILE ---------- */
+.nav-toggle {
+  display: none;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    border-top: 1px solid black;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 25px;
+  }
+
+  .main-nav.show {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .site-header {
+    padding: 10px 24px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav.show {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid black;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .hero,
+  .hero-slide,
+  #hero-image {
+    height: 70vh;
+  }
+
+  .hero-content {
+    right: 24px;
+    max-width: 80%;
+  }
+
+  #hero-artist {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    right: 16px;
+    text-align: left;
+  }
+
+  #hero-artist {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1024px) {
+  .grid-artists {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
   .grid-artists {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .artist-card-big {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
 }
-@media (max-width: 640px) {
+@media (max-width: 900px) {
+  .event {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .event img {
+    width: 100%;
+    height: auto;
+  }
+
+  .event-title {
+    font-size: 22px;
+  }
+
+  .event-date h3 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 900px) {
+  .social-news-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .footer-top-line {
+    width: 90%;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
 }
